@@ -21,6 +21,7 @@ def tanh(x):
     return theano.tensor.tanh(x)
 
 model.add(Dense(64, activation=tanh))
+# or
 model.add(Activation(tanh))
 ```
 
